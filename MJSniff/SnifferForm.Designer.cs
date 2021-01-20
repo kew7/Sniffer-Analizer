@@ -38,6 +38,8 @@ namespace MJsniffer
             this.treeView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeView.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.treeView.ForeColor = System.Drawing.SystemColors.Desktop;
             this.treeView.Location = new System.Drawing.Point(12, 12);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(396, 78);
