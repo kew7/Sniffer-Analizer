@@ -79,6 +79,7 @@ namespace MJsniffer
             // 
             // MJsnifferForm
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 136);
@@ -86,6 +87,7 @@ namespace MJsniffer
             this.Controls.Add(this.cmbInterfaces);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.treeView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MJsnifferForm";
             this.Text = "Sniffer & Analizer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SnifferForm_FormClosing);
