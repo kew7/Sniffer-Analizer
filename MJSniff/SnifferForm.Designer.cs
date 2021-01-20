@@ -31,6 +31,7 @@ namespace MJsniffer
             this.treeView = new System.Windows.Forms.TreeView();
             this.btnStart = new System.Windows.Forms.Button();
             this.cmbInterfaces = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // treeView
@@ -48,7 +49,7 @@ namespace MJsniffer
             // btnStart
             // 
             this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnStart.Location = new System.Drawing.Point(12, 96);
+            this.btnStart.Location = new System.Drawing.Point(12, 112);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(87, 21);
             this.btnStart.TabIndex = 1;
@@ -62,16 +63,26 @@ namespace MJsniffer
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbInterfaces.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbInterfaces.FormattingEnabled = true;
-            this.cmbInterfaces.Location = new System.Drawing.Point(126, 96);
+            this.cmbInterfaces.Location = new System.Drawing.Point(126, 112);
             this.cmbInterfaces.Name = "cmbInterfaces";
             this.cmbInterfaces.Size = new System.Drawing.Size(280, 21);
             this.cmbInterfaces.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(220, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Select an interface";
             // 
             // MJsnifferForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 136);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbInterfaces);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.treeView);
@@ -80,6 +91,7 @@ namespace MJsniffer
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SnifferForm_FormClosing);
             this.Load += new System.EventHandler(this.SnifferForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -88,6 +100,7 @@ namespace MJsniffer
         private System.Windows.Forms.TreeView treeView;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.ComboBox cmbInterfaces;
+        private System.Windows.Forms.Label label1;
     }
 }
 
