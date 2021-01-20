@@ -1,2 +1,4 @@
-# Sniffer-Analizer Receiving and analyzing packets received from a socket
+# Sniffer-Analizer 
+
+Receiving and analyzing packets received from a socket
 
